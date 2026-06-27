@@ -117,3 +117,57 @@ print(txt)
 
 txt = "We are the so-called \"Vikings\" from the north."
 print(txt)
+
+#bool
+
+print(10 > 9)
+print(10 == 9)
+print(10 < 9)
+
+#arithematic operator
+
+x = 12
+y = 5
+
+print(x // y)
+
+print(x / y)
+
+print(x + y)
+
+print(x - y)
+
+print(x * y)
+
+#The Ternary Operator
+
+num = 6
+
+x = "Fri" if num == 5 else "Sat" if num == 6 else "Sun" if num == 7 else "weekday"
+
+print(x)
+
+#Comparison Operators
+
+
+x = 5
+y = 3
+
+print(x == y)
+print(x != y)
+print(x > y)
+print(x < y)
+print(x >= y)
+print(x <= y)
+
+#The & operator compares each bit and set it to 1 if both are 1, otherwise it is set to 0:
+
+print(6 & 3)
+
+#The | operator compares each bit and set it to 1 if one or both is 1, otherwise it is set to 0:
+
+print(6 | 3)
+
+#The ^ operator compares each bit and set it to 1 if only one is 1, otherwise (if both are 1 or both are 0) it is set to 0:
+
+print(6 ^ 3)

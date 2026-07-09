@@ -287,3 +287,155 @@ print(newjoined)
 newmultiple=fruits * 2
 
 print(newmultiple)
+
+
+#Set is a collection which is unordered, unchangeable*, and unindexed. No duplicate members.
+
+set= {'check','it','out'}
+
+print(set)
+
+#Add an item to a set, using the add() method:
+
+
+thisset = {"apple", "banana", "cherry"}
+
+thisset.add("orange")
+
+print(thisset)
+
+thisset = {"apple", "banana", "cherry"}
+mylist = ["kiwi", "orange"]
+
+thisset.update(mylist)
+
+print(thisset)
+
+# remove and discard can be used to remove a value from the set
+
+thisset = {"apple", "banana", "cherry"}
+
+thisset.discard("banana")
+thisset.remove("apple")
+
+print(thisset)
+
+
+""" There are several ways to join two or more sets in Python.
+
+The union() and update() methods joins all items from both sets.
+
+The intersection() method keeps ONLY the duplicates.
+
+The difference() method keeps the items from the first set that are not in the other set(s).
+
+The symmetric_difference() method keeps all items EXCEPT the duplicates. """
+
+set1 = {"a", "b", "c"}
+set2 = {1, 2, 3}
+set3 = {"John", "Elena"}
+set4 = {"apple", "bananas", "cherry"}
+
+myset = set1.union(set2, set3, set4)
+mysetunion=set1 | set2 | set3 | set4
+
+set3 = set1 & mysetunion
+set5 = set1 - mysetunion
+
+
+print(myset)
+print(mysetunion)
+print(set3)
+print(set5)
+
+x = frozenset({"apple", "banana", "cherry"})
+print(x)
+print(type(x))
+
+#Dictionary is a collection which is ordered** and changeable. No duplicate members.
+
+thisdict = {
+  "brand": "Ford",
+  "electric": False,
+  "year": 1964,
+  "colors": ["red", "white", "blue"]
+}
+
+print(thisdict)
+
+print(thisdict['year'])
+print(thisdict.keys())
+print(thisdict.values())
+print(thisdict.items())
+
+
+#change/add the value
+thisdict.update({"year": 2020})
+thisdict.update({"month": "jan"})
+
+print(thisdict['year'])
+
+thisdict["year"] = 2022
+thisdict["day"] = 23
+print(thisdict['year'])
+print(thisdict)
+
+#remove the items 
+
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+thisdict.pop("model")
+print(thisdict)
+
+#remove whole item 
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+thisdict.popitem()
+print(thisdict)
+
+
+#There are ways to make a copy, one way is to use the built-in Dictionary method copy().
+
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+mydict = thisdict.copy()
+print(mydict)
+
+#Make a copy of a dictionary with the dict() function:
+
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+mydict = dict(thisdict)
+print(mydict)
+
+#Create a dictionary that contain three dictionaries:
+#nested dictionary
+
+myfamily = {
+  "child1" : {
+    "name" : "Emil",
+    "year" : 2004
+  },
+  "child2" : {
+    "name" : "Tobias",
+    "year" : 2007
+  },
+  "child3" : {
+    "name" : "Linus",
+    "year" : 2011
+  }
+}
+
+print(myfamily)

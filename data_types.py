@@ -171,3 +171,82 @@ print(6 | 3)
 #The ^ operator compares each bit and set it to 1 if only one is 1, otherwise (if both are 1 or both are 0) it is set to 0:
 
 print(6 ^ 3)
+
+
+""" Python Collections (Arrays)
+There are four collection data types in the Python programming language:
+
+List is a collection which is ordered and changeable. Allows duplicate members.
+Tuple is a collection which is ordered and unchangeable. Allows duplicate members.
+Set is a collection which is unordered, unchangeable*, and unindexed. No duplicate members.
+Dictionary is a collection which is ordered** and changeable. No duplicate members. """
+
+
+fruits= ['banana','apple','pineapple']
+print(fruits[1])
+print(len(fruits))
+print(type(fruits))
+
+
+print(fruits[:2])
+print(fruits[1:2])
+
+if "apple" in fruits: 
+   print("apple exist in list")
+
+
+fruits.insert(2 , "Watermelon")
+
+fruits.append("peach")
+
+veg=("tomato","ladyfinger")
+
+fruits.extend(veg)
+
+fruits.remove("tomato")
+
+fruits.pop(2)
+
+del fruits[3]
+
+newlist = [x for x in fruits if x != "apple"]
+
+
+print(fruits)
+print(newlist)
+
+thislist = ["orange", "Mango", "kiwi", "pineapple", "banana"]
+thislist.sort(key = str.lower)
+
+
+print(thislist)
+
+thisnum = [100, 50, 65, 82, 23]
+
+thisnum.sort(reverse=True)
+
+
+print(thisnum)
+
+
+# copy the list
+
+newlist = thisnum.copy()
+
+listusinglist= list(thisnum)
+
+listusingslice=thisnum[:]
+
+print(newlist)
+print(listusinglist)
+print(listusingslice)
+
+
+#join 2 lists
+
+joinedlist= newlist + listusinglist
+
+#or use the extend method
+
+print(joinedlist)
+

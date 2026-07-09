@@ -250,3 +250,40 @@ joinedlist= newlist + listusinglist
 
 print(joinedlist)
 
+
+
+#tuple 
+#A tuple is a collection which is ordered and unchangeable.
+
+
+
+thistuples = ("apple", "banana", "cherry")
+print(thistuples)
+
+thistuple = ("apple",)
+print(type(thistuple))
+
+#NOT a tuple
+thistuple = ("apple")
+print(type(thistuple))
+
+#unpacking a tuple
+
+fruits = ("apple", "banana", "cherry", "strawberry", "raspberry")
+
+(green, *yellow, red) = fruits
+
+print(green)
+print(yellow)
+print(red)
+
+
+#joining tuple 
+
+newjoined= fruits + thistuples
+
+print(newjoined)
+
+newmultiple=fruits * 2
+
+print(newmultiple)
